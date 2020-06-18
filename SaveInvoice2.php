@@ -2,13 +2,11 @@
 include "tool.php";
 
     $data=[
-    'year'=>$_POST['year'],
-    'code'=>$_POST['code'],
-    'number'=>$_POST['number'],
-    'expend'=>$_POST['expend'],
+    'num'=>$_POST['num'],
     'period'=>$_POST['period'],
     ];
-$res=save("invoice_form",$data);
+$res=save("money",$data);
+
 if($res==1){
     header('Location: editnum.php');
 }else{

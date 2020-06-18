@@ -4,16 +4,16 @@ $dsn="mysql:host=localhost;charset=utf8;dbname=invoice";
 $pdo=new PDO($dsn,"root","8888");
 date_default_timezone_set("Asia/Taipei");
 
-//查詢資料
-$find=all('invoice_form',["id"=>"8"]);
-foreach($find as $row){
-    echo "id=".$row['id'] ."<br>";
-    echo $row['code'] ."-";
-    echo $row['number'] ."-";
-    echo $row['period'] ."-";
-    echo $row['expend'] ;
-    echo "<hr>";
-}
+// //查詢資料
+// $find=all('invoice_form',["id"=>"8"]);
+// foreach($find as $row){
+//     echo "id=".$row['id'] ."<br>";
+//     echo $row['code'] ."-";
+//     echo $row['number'] ."-";
+//     echo $row['period'] ."-";
+//     echo $row['expend'] ;
+//     echo "<hr>";
+// }
 //用法
 function all($table,...$arg){
     global $pdo;

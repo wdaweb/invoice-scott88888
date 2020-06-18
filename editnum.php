@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/6a1827a07d.js" crossorigin="anonymous"></script>
     <script src="plugins/jquery-3.5.1.min.js"></script>
     <script src="plugins/bootstrap.bundle.min.js"></script>
+
     <style>
     a {color:lightgreen;}
     </style>
@@ -18,7 +19,7 @@
 <body background="../invoice/imgs/w1680.jpg">
 <tbody>
 <div class="container">
-<form action="SaveInvoice.php" method="post">
+<form action="SaveInvoice2.php" method="post">
     <table class="table table-dark">
     
     <div class="text-center">
@@ -43,26 +44,11 @@
     </tr>
   </thead>
   
+  
     <tr>
-      <th scope="row">年分:</th>
-      <td><select name="year">
-    <option value="2020">2020</option>
-    <option value="2021">2021</option>
-    <option value="2022">2022</option>
-</select></td>
-    </tr>
-    <tr>
-      <th scope="row">英文編號:</th>
-      <td>  <input type="text" name="code"></input></td>
-    </tr>
-    <tr>
-      <th scope="row">數字編號::</th>
-      <td><input type="number" name="number"></input></td>
+      <th scope="row">數字編號3碼(六獎):</th>
+      <td><input type="number" name="num"></input></td>
      
-    </tr>
-    <tr>
-      <th scope="row">花費:</th>
-      <td><input type="number" name="expend"></input></td>
     </tr>
     <tr>
     
